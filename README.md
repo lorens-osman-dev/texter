@@ -13,7 +13,7 @@ This tool fixes the text paragraphs by merging the lines, fixing list lines, rem
 
 - if you installed the texter from npm , and want to run test
 
-  >npm explore texter -- npm run test
+  >npm explore @lorens/texter -- npm run test
 
      or:
    
