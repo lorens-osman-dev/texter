@@ -44,7 +44,7 @@
     "url": "https://github.com/lorens-osman-dev/texter/issues"
   },
   "homepage": "https://github.com/lorens-osman-dev/texter#readme",
-  "dependencies": {
+  "devDependencies": {
     "chalk": "^5.3.0"
   }
 }
