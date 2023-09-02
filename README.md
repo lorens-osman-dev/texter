@@ -35,10 +35,11 @@ const inputText = `Lorem       ipsum        dolor
 sed .`
 console.log(texter(inputText));
 ```
-
-> the output is :
-> Lorem ipsum dolor sit amet , adipiscing .
->-elit, sed .
+```
+the output is :
+Lorem ipsum dolor sit amet , adipiscing .
+- elit, sed .
+```
 
 
 ## Try your text 
@@ -76,10 +77,10 @@ npm run test
 -  İf you installed the texter from npm, And want to therun test.
 
 ```sh
-npm explore @lorens/texter – npm run test
+npm explore @lorens/texter -- npm run test
 ```
 
->npm explore @lorens/texter -- npm run test
+
 
   
 
@@ -95,11 +96,5 @@ testResult();
 
 
   
-
-
-
-
-
-
 
 
