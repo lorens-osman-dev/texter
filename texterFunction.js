@@ -55,6 +55,10 @@ export const lorensDreamtexter = function (inputText, lineKeeperSymbol, unchange
         }
 
         //- line's Start Checks 
+        //check if the line starts with Private Use Area Character ('','') 
+        if (line.charCodeAt(0) >= 0xE000 && line.charCodeAt(0) <= 0xF8FF){
+            modifiedLine = modifiedLine.replace(line[0], ' lorensDreamDash ');
+        }
         if (line.startsWith('-')) {
             modifiedLine = modifiedLine.replace('-', ' lorensDreamDash ');
         }

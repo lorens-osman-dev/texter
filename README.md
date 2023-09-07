@@ -8,17 +8,16 @@ This tool fixes the text paragraphs by merging the lines, fixing list lines, rem
 
 
 ## What texter do
-- delete all whaite spaces from text wich means merging the lines ,
 -  Remove all white spaces from the text. This means combining lines together.
 - If a line starts with a special character like '-', '*', '_', '•', it's considered a list item and won't be merged with the previous line.
 -  If a line starts with a number or a number followed by one of these special characters: '-', '*', '•', '.', '_', it's considered a numbered list item and won't merge with the previous line.
 -  If a line starts with a '#' symbol, it remains unchanged. You can replace '#' with any prefix you need.
 -  The `texter()` function takes a variable that refers to a special chunk of text you want to keep as is, like a product name or company name.
--  Lines that end with '.', ':', or '?' will have a line break added after the ending symbol, preventing them from merging with the next line.
+-  Lines that end with '.', ':',';', or '?' will have a line break added after the ending symbol, preventing them from merging with the next line.
 -  Remove every empty line.
 -  Remove unnecessary spaces.
 -  Trim every line.
-
+-  Detect if the line Starts with Private Use Area Character and replace it with '-'
   ## Install
   ```sh
 npm i @lorens/texter
@@ -43,7 +42,7 @@ Lorem ipsum dolor sit amet , adipiscing .
 
 
 ## Try your text 
-İn this [page example](https://lorens-osman-dev.github.io/texter/) we used texter to handle the input text.
+İn this [page example](https://lorens-osman-dev.github.io/texter/) we used texter to handle the input text, Copy your text and see see what Texter results.
 
 ## Who need texter 
 -   When you're copying text from PDF files.
@@ -54,7 +53,7 @@ Lorem ipsum dolor sit amet , adipiscing .
 
 `texter()` function accept 3 parameters
 
-- İnput text varible.
+- İnput text variable .
 
 - Line Keeper Symbol, default is ‘#’, If a line starts with a ‘#’ symbol, it remains unchanged.
 - unchangeable Strings parameter ,variable that refers to a special chunk of text you want to keep as is.
@@ -74,7 +73,7 @@ npm run test
 
   
 
--  İf you installed the texter from npm, And want to therun test.
+-  İf you installed the texter from npm, And want to the run test.
 
 ```sh
 npm explore @lorens/texter -- npm run test
